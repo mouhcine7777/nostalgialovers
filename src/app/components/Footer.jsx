@@ -1,0 +1,98 @@
+"use client";
+import Image from "next/image";
+import Link from "next/link"; // Import the Link component
+import { motion } from "framer-motion";
+import { Facebook, Instagram, Youtube, Mail, MapPin } from "lucide-react";
+
+const Footer = () => {
+  const socialLinks = [
+    { icon: Facebook, href: "/facebook", color: "#7F0646" },
+    { icon: Instagram, href: "/instagram", color: "#7F0646" },
+    { icon: Youtube, href: "/youtube", color: "#7F0646" }
+  ];
+
+  return (
+    <motion.footer 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="relative bg-[#7F0646] text-white py-16 overflow-hidden"
+    >
+      {/* Decorative Overlay */}
+      <div className="absolute inset-0 bg-black/20 pointer-events-none" />
+
+      <div className="container mx-auto px-4 relative z-10">
+        {/* Logo and Main Content */}
+        <div className="flex flex-col md:flex-row items-center justify-between mb-12">
+          <div className="mb-6 md:mb-0">
+            <Image
+              src="/logo.webp"
+              alt="Nostalgia Lovers Festival Logo"
+              width={120}
+              height={120}
+              className="mx-auto md:mx-0"
+            />
+          </div>
+          
+          <div className="flex space-x-4">
+            {socialLinks.map((social) => (
+              <motion.div 
+                key={social.href} 
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                className="hover:opacity-75 transition-all"
+              >
+                <Link href={social.href} passHref>
+                  <social.icon color="white" size={24} />
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        {/* Footer Grid */}
+        <div className="grid md:grid-cols-3 gap-8 border-t border-white/20 pt-12">
+          {/* About Section */}
+          <div className="space-y-4">
+            <h4 className="text-xl font-[Montserrat] font-bold mb-4">About Festival</h4>
+            <p className="font-[Montserrat] font-light text-white/80">
+            Step Into the Timeless World of 80s and 90s Nostalgia and Join Us for an Unforgettable Experience
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div className="space-y-4">
+            <h4 className="text-xl font-[Montserrat] font-bold mb-4">Quick Navigation</h4>
+            <div className="grid grid-cols-2 gap-2">
+              <Link href="/lineup" className="font-[Montserrat] font-light text-white/80 hover:text-white">Lineup</Link>
+              <Link href="/2024edition" className="font-[Montserrat] font-light text-white/80 hover:text-white">Édition 2024</Link>
+              <Link href="/partners" className="font-[Montserrat] font-light text-white/80 hover:text-white">Partners</Link>
+              <Link href="/contact" className="font-[Montserrat] font-light text-white/80 hover:text-white">Contact</Link>
+            </div>
+          </div>
+
+          {/* Contact Information */}
+          <div className="space-y-4">
+            <h4 className="text-xl font-[Montserrat] font-bold mb-4">Connect With Us</h4>
+            <div className="space-y-2">
+              <div className="flex items-center space-x-2">
+                <Mail size={20} className="text-white/80" />
+                <span className="font-[Montserrat] font-light">contact@nostalgialovers.ma</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <MapPin size={20} className="text-white/80" />
+                <span className="font-[Montserrat] font-light">Parc du Vélodrome</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="text-center font-[Montserrat] font-light text-white/60 mt-12 pt-6 border-t border-white/20">
+          © {new Date().getFullYear()} Nostalgia Lovers Festival. All Rights Reserved.
+        </div>
+      </div>
+    </motion.footer>
+  );
+};
+
+export default Footer;
