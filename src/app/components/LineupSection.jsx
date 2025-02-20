@@ -143,7 +143,7 @@ export default function LineupSection() {
                       className="w-full h-full object-cover"
                     />
                     <img 
-                      src="logo.webp" 
+                      src="logo.png" 
                       alt="Festival logo"
                       className="absolute top-4 left-4 w-13 h-12"
                     />
