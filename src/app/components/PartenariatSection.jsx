@@ -6,13 +6,13 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 const partnerLogos = [
-    { src: '/logo.webp', name: 'Partner 1', width: 200, height: 80 },
+    { src: '/logo.png', name: 'Partner 1', width: 200, height: 80 },
     { src: '/LOGO-PE.png', name: 'Partner 2', width: 200, height: 80 },
-    { src: '/logo.webp', name: 'Partner 3', width: 200, height: 80 },
+    { src: '/logo.png', name: 'Partner 3', width: 200, height: 80 },
     { src: '/LOGO-PE.png', name: 'Partner 4', width: 200, height: 80 },
-    { src: '/logo.webp', name: 'Partner 5', width: 200, height: 80 },
+    { src: '/logo.png', name: 'Partner 5', width: 200, height: 80 },
     { src: '/LOGO-PE.png', name: 'Partner 6', width: 200, height: 80 },
-    { src: '/logo.webp', name: 'Partner 7', width: 200, height: 80 },
+    { src: '/logo.png', name: 'Partner 7', width: 200, height: 80 },
     { src: '/LOGO-PE.png', name: 'Partner 8', width: 200, height: 80 },
 ];
 
