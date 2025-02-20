@@ -14,7 +14,7 @@ export default function Edition2024Page() {
   const sections = [
     {
       id: 'food-court',
-      title: 'Food Court',
+      title: 'FOOD COURT',
       description: 'Burgers, pizzas, snacks et bien plus… De quoi reprendre des forces entre deux shows et profiter de chaque instant du festival !',
       icon: <Coffee className="w-6 h-6 md:w-8 md:h-8" />,
       imageSrc: 'foodcourt.webp',
@@ -22,7 +22,7 @@ export default function Edition2024Page() {
     },
     {
       id: 'instagram',
-      title: 'Espaces Instagrammables',
+      title: 'ESPACES INSTAGRAMMABLES',
       description: 'Chaque coin du festival a son ambiance propre, trouvez le vôtre, capturez votre moment et laissez les photos raconter votre soirée.',
       icon: <Camera className="w-6 h-6 md:w-8 md:h-8" />,
       imageSrc: 'instagramspace.webp',
@@ -30,7 +30,7 @@ export default function Edition2024Page() {
     },
     {
       id: 'gaming',
-      title: 'Gaming Zone',
+      title: 'GAMING ZONE',
       description: 'Un espace fun pour petits et grands, idéal pour une pause en famille ou entre amis avant de retrouver l’ambiance du festival.',
       icon: <Gamepad className="w-6 h-6 md:w-8 md:h-8" />,
       imageSrc: 'gamingzone.webp',
@@ -38,7 +38,7 @@ export default function Edition2024Page() {
     },
     {
       id: 'zen',
-      title: 'Zen Corner',
+      title: 'ZEN CORNER',
       description: 'Un espace calme pour savourer un café, discuter ou vous relaxer, parfait pour reprendre des forces en toute tranquillité.',
       icon: <Leaf className="w-6 h-6 md:w-8 md:h-8" />,
       imageSrc: 'zencorner.webp',
@@ -62,7 +62,7 @@ export default function Edition2024Page() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 font-[Montserrat]">
-              Édition 2024 un moment hors du temps
+            ÉDITION 2024 UN MOMENT HORS DU TEMPS
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-white-200 font-[Montserrat]">
               De la nostalgie, des frissons et des hits qui ont fait chanter toute une génération.

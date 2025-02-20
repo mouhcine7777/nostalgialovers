@@ -10,40 +10,42 @@ import 'swiper/css/pagination';
 
 const artistData = {
   '3 Juillet': [
-    { name: 'BONEY M XPERIENCE', image: 'artist6.jpeg' },
-    { name: 'THOMAS ANDRES', image: 'artist4.jpg' },
-    { name: 'BILLY CRAWFORD', image: 'artist2.jpg' },
-    { name: 'SHOLA AMA', image: 'shola-ama.jpg' },
-    { name: 'LONDONBEAT', image: 'LONDONBEAT.jpg' },
-    { name: 'ROZALLA', image: 'rozalla.jpg' },
-    { name: '3T BAND', image: '3Tband.jpg' },
-    { name: 'DJ JENY PRESTON', image: 'jenypreston.jpg' },
-    { name: 'SANDRA', image: 'sandra.jpg' },
-
+    { name: 'BONEY M XPERIENCE', image: '3juillet/boneyM.webp' },
+    { name: 'THOMAS ANDRES', image: '3juillet/artist4.webp' },
+    { name: 'BILLY CRAWFORD', image: '3juillet/billy.webp' },
+    { name: 'SHOLA AMA', image: '3juillet/sholaama.webp' },
+    { name: 'LONDONBEAT', image: '3juillet/LONDONBEAT.webp' },
+    { name: 'ROZALLA', image: '3juillet/rozalla.webp' },
+    { name: 'WHIGFIELD', image: '3juillet/whigfield.webp' },
+    { name: '3T BAND', image: '3juillet/3Tband.webp' },
+    { name: 'DJ JENY PRESTON', image: '3juillet/jenypreston.webp' },
+    { name: 'SANDRA', image: '3juillet/sandra.webp' },
   ],
   '4 Juillet': [
-    { name: 'JENNY FROM ACE OF BASE', image: 'artist7.jpg' },
-    { name: 'LOUBEGA', image: 'artist3.jpg' },
-    { name: 'KELLY O', image: 'kellyo.jpg' },
-    { name: 'LAS KETCHUP', image: 'las-ketchup.jpg' },
-    { name: 'MR PRÉSIDENT', image: 'Mr-president.jpg' },
-    { name: 'DOUBLE YOU', image: 'doble-you.jpg' },
-    { name: 'MAXX', image: 'maxx.jpg' },
-    { name: 'BELLINI', image: 'bellini.jpg' },
-    { name: 'DJ KEVENATOR', image: 'djkevenator.jpg' },
-    { name: 'WHIGFIELD', image: 'WHIGFIELD.webp' },
-    { name: 'TANIA EVANS', image: 'taniaevans.jpg' },
+    { name: 'JENNY FROM ACE OF BASE', image: '4juillet/artist7.jpg' },
+    { name: 'LOUBEGA', image: '4juillet/loubega.webp' },
+    { name: 'KELLY O', image: '4juillet/kellyo.webp' },
+    { name: 'LAS KETCHUP', image: '4juillet/lasketchup.webp' },
+    { name: 'MR PRÉSIDENT', image: '4juillet/mrpresident.webp' },
+    { name: 'DOUBLE YOU', image: '4juillet/doble-you.webp' },
+    { name: 'MAXX', image: '4juillet/maxx.webp' },
+    { name: 'BELLINI', image: '4juillet/bellini.webp' },
+    { name: 'DJ KEVENATOR', image: '4juillet/djkevenator.jpg' },
+    { name: 'TANIA EVANS', image: '4juillet/taniaevans.webp' },
   ],
   '5 Juillet': [
-    { name: 'TECHNOTRONIQUE', image: 'artist5.jpg' },
-    { name: 'MONTELL JORDAN', image: 'montell.jpg' },
-    { name: 'LA MOVIDA IBIZA', image: 'movida.jpg' },
-    { name: 'SALOME DE BAHIA', image: 'salomedebahia.jpg' },
-    { name: 'REEL 2 REEL', image: 'reel2reel.jpg' },
-    { name: 'C + C MUSIC FACTORY', image: 'ccmusicfactory.jpg' },
-    { name: 'GIBSON BROTHERS', image: 'gibsonbrothers.jpg' },
+    { name: 'TECHNOTRONIQUE', image: '5juillet/technotronique.jpeg' },
+    { name: 'MONTELL JORDAN', image: '5juillet/montell.webp' },
+    { name: 'LA MOVIDA IBIZA', image: '5juillet/movida.webp' },
+    { name: 'SALOME DE BAHIA', image: '5juillet/salomedebahia.webp' },
+    { name: 'REEL 2 REEL', image: '5juillet/reel2reel.jpg' },
+    { name: 'C + C MUSIC FACTORY', image: '5juillet/ccmusicfactory.jpg' },
+    { name: 'GIBSON BROTHERS', image: '5juillet/gibsonbrothers.jpg' },
   ],
 };
+
+// Helper function to convert dates to valid IDs
+const dateToId = (date) => date.toLowerCase().replace(/\s+/g, '-');
 
 export default function LineupSection() {
   const [activeDay, setActiveDay] = useState('3 Juillet');
@@ -66,28 +68,34 @@ export default function LineupSection() {
       >
         Prépare-toi à chanter, danser et revivre la folie des années 80 et 90 !
       </p>
-      
 
-      <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-6 mb-8 md:mb-16 px-4">
-  {Object.keys(artistData).map((day) => (
-    <button
-      key={day}
-      onClick={() => setActiveDay(day)}
-      className={`relative px-6 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-xl font-[Montserrat] font-bold transition-all duration-300 ease-in-out overflow-hidden
-        ${
-          activeDay === day
-            ? 'bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-[0px_4px_20px_rgba(214,5,158,0.6)] scale-105'
-            : 'bg-transparent border-2 border-pink-500 text-white hover:bg-pink-500/20 hover:shadow-[0px_0px_15px_rgba(214,5,158,0.5)] hover:scale-105'
-        }`}
-      style={{
-        backdropFilter: activeDay !== day ? 'blur(10px)' : 'none',
-      }}
-    >
-      {day}
-    </button>
-  ))}
-</div>
-
+      <div 
+        className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-6 mb-8 md:mb-16 px-4"
+        role="tablist"
+        aria-label="Select performance day"
+      >
+        {Object.keys(artistData).map((day) => (
+          <button
+            key={day}
+            onClick={() => setActiveDay(day)}
+            role="tab"
+            aria-selected={activeDay === day}
+            aria-controls={`panel-${dateToId(day)}`}
+            id={`tab-${dateToId(day)}`}
+            className={`relative px-6 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-xl font-[Montserrat] font-bold transition-all duration-300 ease-in-out overflow-hidden
+              ${
+                activeDay === day
+                  ? 'bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-[0px_4px_20px_rgba(214,5,158,0.6)] scale-105'
+                  : 'bg-transparent border-2 border-pink-500 text-white hover:bg-pink-500/20 hover:shadow-[0px_0px_15px_rgba(214,5,158,0.5)] hover:scale-105'
+              }`}
+            style={{
+              backdropFilter: activeDay !== day ? 'blur(10px)' : 'none',
+            }}
+          >
+            {day}
+          </button>
+        ))}
+      </div>
 
       <AnimatePresence mode="wait">
         <motion.div
@@ -97,6 +105,9 @@ export default function LineupSection() {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4 }}
           className="px-4 md:px-12 relative"
+          role="tabpanel"
+          id={`panel-${dateToId(activeDay)}`}
+          aria-labelledby={`tab-${dateToId(activeDay)}`}
         >
           <Swiper
             modules={[Navigation, Pagination]}
@@ -128,19 +139,22 @@ export default function LineupSection() {
                   <div className="h-full">
                     <img
                       src={artist.image}
-                      alt={artist.name}
+                      alt={`${artist.name} - Performance artist`}
                       className="w-full h-full object-cover"
                     />
                     <img 
                       src="logo.webp" 
-                      alt="Logo" 
+                      alt="Festival logo"
                       className="absolute top-4 left-4 w-13 h-12"
                     />
                     <div 
                       className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"
+                      aria-hidden="true"
                     />
                     <div 
                       className="absolute inset-0 bg-gradient-to-t from-[#D6059E]/80 via-[#D6059E]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      style={{ top: '70%' }}
+                      aria-hidden="true"
                     />
                     <div className="absolute bottom-0 left-0 right-0 p-6 transition-transform duration-300 group-hover:transform group-hover:translate-y-0">
                       <h3 className="text-xl sm:text-2xl font-bold text-white text-center font-[Montserrat]">
@@ -153,21 +167,24 @@ export default function LineupSection() {
             ))}
           </Swiper>
 
-{/* Navigation and pagination container */}
-<div className="flex justify-between items-center mt-8">
-  {/* Pagination dots */}
-  <div className="custom-pagination flex-grow" />
-  
-  {/* Navigation buttons */}
-  <div className="flex items-center gap-4 mr-4">
-    <button className="custom-nav-prev transition-all duration-200 w-12 h-12 rounded-full bg-gradient-to-r from-[#D6059E] to-[#ff47c2] text-white flex items-center justify-center shadow-lg hover:shadow-2xl transform hover:scale-110 active:scale-95">
-      <ArrowLeft className="w-6 h-6" />
-    </button>
-    <button className="custom-nav-next transition-all duration-200 w-12 h-12 rounded-full bg-gradient-to-l from-[#D6059E] to-[#ff47c2] text-white flex items-center justify-center shadow-lg hover:shadow-2xl transform hover:scale-110 active:scale-95">
-      <ArrowRight className="w-6 h-6" />
-    </button>
-  </div>
-</div>
+          <div className="flex justify-between items-center mt-8">
+            <div className="custom-pagination flex-grow" role="navigation" aria-label="Slides" />
+            
+            <div className="flex items-center gap-4 mr-4">
+              <button
+                className="custom-nav-prev transition-all duration-200 w-12 h-12 rounded-full bg-gradient-to-r from-[#D6059E] to-[#ff47c2] text-white flex items-center justify-center shadow-lg hover:shadow-2xl transform hover:scale-110 active:scale-95"
+                aria-label="Previous slide"
+              >
+                <ArrowLeft className="w-6 h-6" aria-hidden="true" />
+              </button>
+              <button 
+                className="custom-nav-next transition-all duration-200 w-12 h-12 rounded-full bg-gradient-to-l from-[#D6059E] to-[#ff47c2] text-white flex items-center justify-center shadow-lg hover:shadow-2xl transform hover:scale-110 active:scale-95"
+                aria-label="Next slide"
+              >
+                <ArrowRight className="w-6 h-6" aria-hidden="true" />
+              </button>
+            </div>
+          </div>
         </motion.div>
       </AnimatePresence>
 
