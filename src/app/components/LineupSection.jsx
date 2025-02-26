@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 const artistData = {
   '3 Juillet': [
     { name: 'BONEY M XPERIENCE', image: '3juillet/boneyM.webp' },
-    { name: 'THOMAS ANDRES', image: '3juillet/artist4.webp' },
+    //{ name: 'THOMAS ANDRES', image: '3juillet/artist4.webp' },
     { name: 'BILLY CRAWFORD', image: '3juillet/billy.webp' },
     { name: 'SHOLA AMA', image: '3juillet/sholaama.webp' },
     { name: 'LONDONBEAT', image: '3juillet/LONDONBEAT.webp' },
@@ -19,7 +19,7 @@ const artistData = {
     { name: 'WHIGFIELD', image: '3juillet/whigfield.webp' },
     { name: '3T BAND', image: '3juillet/3Tband.webp' },
     { name: 'DJ JENY PRESTON', image: '3juillet/jenypreston.webp' },
-    { name: 'SANDRA', image: '3juillet/sandra.webp' },
+    //{ name: 'SANDRA', image: '3juillet/sandra.webp' },
   ],
   '4 Juillet': [
     { name: 'JENNY FROM ACE OF BASE', image: '4juillet/aceofbase.webp' },
@@ -30,7 +30,7 @@ const artistData = {
     { name: 'DOUBLE YOU', image: '4juillet/doble-you.webp' },
     { name: 'MAXX', image: '4juillet/maxx.webp' },
     { name: 'BELLINI', image: '4juillet/bellini.webp' },
-    { name: 'DJ KEVENATOR', image: '4juillet/djkevenator.jpg' },
+    //{ name: 'DJ KEVENATOR', image: '4juillet/djkevenator.jpg' },
     { name: 'TANIA EVANS', image: '4juillet/taniaevans.webp' },
   ],
   '5 Juillet': [
