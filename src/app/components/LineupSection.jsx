@@ -14,7 +14,7 @@ const artistData = {
     { name: 'THOMAS ANDRES', image: '3juillet/artist4.webp' },
     { name: 'BILLY CRAWFORD', image: '3juillet/billy.webp' },
     { name: 'SHOLA AMA', image: '3juillet/sholaama.webp' },
-    { name: 'LONDONBEAT', image: '3juillet/LONDONBEAT.webp' },
+    { name: 'LONDONBEAT', image: '3juillet/londonbeat.webp' },
     { name: 'ROZALLA', image: '3juillet/rozalla.webp' },
     { name: 'WHIGFIELD', image: '3juillet/whigfield.webp' },
     { name: '3T BAND', image: '3juillet/3Tband.webp' },
@@ -22,7 +22,7 @@ const artistData = {
     { name: 'SANDRA', image: '3juillet/sandra.webp' },
   ],
   '4 Juillet': [
-    { name: 'JENNY FROM ACE OF BASE', image: '4juillet/artist7.jpg' },
+    { name: 'JENNY FROM ACE OF BASE', image: '4juillet/aceofbase.webp' },
     { name: 'LOUBEGA', image: '4juillet/loubega.webp' },
     { name: 'KELLY O', image: '4juillet/kellyo.webp' },
     { name: 'LAS KETCHUP', image: '4juillet/lasketchup.webp' },
@@ -38,9 +38,9 @@ const artistData = {
     { name: 'MONTELL JORDAN', image: '5juillet/montell.webp' },
     { name: 'LA MOVIDA IBIZA', image: '5juillet/movida.webp' },
     { name: 'SALOME DE BAHIA', image: '5juillet/salomedebahia.webp' },
-    { name: 'REEL 2 REEL', image: '5juillet/reel2reel.jpg' },
-    { name: 'C + C MUSIC FACTORY', image: '5juillet/ccmusicfactory.jpg' },
-    { name: 'GIBSON BROTHERS', image: '5juillet/gibsonbrothers.jpg' },
+    { name: 'REEL 2 REEL', image: '5juillet/reel2reel.webp' },
+    { name: 'C + C MUSIC FACTORY', image: '5juillet/ccmusicfactory.webp' },
+    { name: 'GIBSON BROTHERS', image: '5juillet/gibsonbrothers.webp' },
   ],
 };
 
