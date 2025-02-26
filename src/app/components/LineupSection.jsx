@@ -14,7 +14,7 @@ const artistData = {
     { name: 'THOMAS ANDRES', image: '3juillet/artist4.webp' },
     { name: 'BILLY CRAWFORD', image: '3juillet/billy.webp' },
     { name: 'SHOLA AMA', image: '3juillet/sholaama.webp' },
-    { name: 'LONDONBEAT', image: '3juillet/londonBeat.webp' },
+    { name: 'LONDONBEAT', image: '3juillet/LONDONBEAT.jpg' },
     { name: 'ROZALLA', image: '3juillet/rozalla.webp' },
     { name: 'WHIGFIELD', image: '3juillet/whigfield.webp' },
     { name: '3T BAND', image: '3juillet/3Tband.webp' },
