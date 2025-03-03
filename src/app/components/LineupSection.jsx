@@ -34,7 +34,7 @@ const artistData = {
     { name: 'TANIA EVANS ORIGINAL VOICE OF MR VAIN', image: '4juillet/taniaevans.webp' },
   ],
   '5 Juillet': [
-    { name: 'DAISY DEE TECHNOTRONIQUE', image: '5juillet/technotronique.jpeg' },
+    { name: 'DAISY DEE TECHNOTRONIQUE', image: '5juillet/technotronique.webp' },
     { name: 'MONTELL JORDAN', image: '5juillet/montell.webp' },
     { name: 'LA MOVIDA IBIZA', image: '5juillet/movida.webp' },
     { name: 'SALOMÉ DE BAHIA', image: '5juillet/salomedebahia.webp' },
