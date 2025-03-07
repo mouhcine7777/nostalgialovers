@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 const artistData = {
   '3 Juillet': [
     { name: 'BONEY M XPERIENCE', image: '3juillet/boneyM.webp' },
-    //{ name: 'THOMAS ANDRES', image: '3juillet/artist4.webp' },
+    { name: 'THOMAS ANDRES', image: '3juillet/thomasAnders.webp' },
     { name: 'BILLY CRAWFORD', image: '3juillet/billy.webp' },
     { name: 'SHOLA AMA', image: '3juillet/sholaama.webp' },
     { name: 'LONDONBEAT', image: '3juillet/LONDONBEAT.webp' },
@@ -30,7 +30,7 @@ const artistData = {
     { name: 'DOUBLE YOU', image: '4juillet/doble-you.webp' },
     { name: 'MAXX', image: '4juillet/maxx.webp' },
     { name: 'BELLINI', image: '4juillet/bellini.webp' },
-    //{ name: 'DJ KEVENATOR', image: '4juillet/djkevenator.jpg' },
+    { name: 'LA CASSETTE DJ’S', image: '4juillet/lacassette.webp' },
     { name: 'TANIA EVANS ORIGINAL VOICE OF MR VAIN', image: '4juillet/taniaevans.webp' },
   ],
   '5 Juillet': [

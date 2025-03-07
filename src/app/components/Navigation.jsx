@@ -21,11 +21,11 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { name: "HOME", href: "/" },
+    { name: "ACCUEIL", href: "/" },
     { name: "LINEUP", href: "/lineup" },
     { name: "ÉDITION 2024", href: "/2024edition"},
-    { name: "PARTNERS", href: "/partners" },
-    { name: "CONTACTS", href: "/contact" },
+    //{ name: "PARTNERS", href: "/partners" },
+    { name: "CONTACT", href: "/contact" },
   ];
 
   return (

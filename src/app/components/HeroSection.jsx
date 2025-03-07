@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function HeroSection() {
   const [timeLeft, setTimeLeft] = useState(null);
@@ -112,9 +113,11 @@ export default function HeroSection() {
           transition={{ delay: 1, duration: 0.5 }}
           className="mt-4"
         >
-          <Button className="px-8 py-4 bg-yellow-500 font-[Montserrat] text-black font-bold text-lg rounded-full shadow-lg hover:shadow-yellow-500/50 transition-all duration-300 transform hover:scale-105">
-            GET TICKETS NOW
-          </Button>
+          <Link href="https://www.guichet.com/nostalgia-lovers-festival" target="_blank" rel="noopener noreferrer">
+            <Button className="px-8 py-4 bg-yellow-500 font-[Montserrat] text-black font-bold text-lg rounded-full shadow-lg hover:shadow-yellow-500/50 transition-all duration-300 transform hover:scale-105">
+              GET TICKETS NOW
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>

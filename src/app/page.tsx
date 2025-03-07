@@ -2,7 +2,6 @@
 import HeroSection from "./components/HeroSection";
 import LineupSection from "./components/LineupSection";
 import MomentsSection from "./components/MomentsSection";
-import PartenariatSection from "./components/PartenariatSection";
 import LocationSection from "./components/LocationSection";
 import NavigationSection from "./components/Navigation";
 import TicketsSection from "./components/TicketsSection";
@@ -16,7 +15,6 @@ export default function Home() {
       <LineupSection />
       <MomentsSection />
       <TicketsSection />
-      <PartenariatSection />
       <LocationSection />
       <Footer />
     </main>

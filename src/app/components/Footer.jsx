@@ -6,9 +6,9 @@ import { Facebook, Instagram, Youtube, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Facebook, href: "/facebook", label: "Visit our Facebook page", color: "#7F0646" },
-    { icon: Instagram, href: "/instagram", label: "Follow us on Instagram", color: "#7F0646" },
-    { icon: Youtube, href: "/youtube", label: "Subscribe to our YouTube channel", color: "#7F0646" }
+    { icon: Facebook, href: "https://web.facebook.com/NostalgiaLoversFestival", label: "Visit our Facebook page", color: "#7F0646" },
+    { icon: Instagram, href: "https://www.instagram.com/nostalgialoversfestival/", label: "Follow us on Instagram", color: "#7F0646" },
+    { icon: Youtube, href: "https://www.youtube.com/@NostalgiaLoversFestival", label: "Subscribe to our YouTube channel", color: "#7F0646" }
   ];
 
   return (
@@ -65,9 +65,9 @@ const Footer = () => {
           <nav aria-label="Quick navigation" className="space-y-4">
             <h2 className="text-xl font-[Montserrat] font-bold mb-4">Quick Navigation</h2>
             <div className="grid grid-cols-2 gap-2">
+            <Link href="/" className="font-[Montserrat] font-light text-white/80 hover:text-white">Accueil</Link>
               <Link href="/lineup" className="font-[Montserrat] font-light text-white/80 hover:text-white">Lineup</Link>
               <Link href="/2024edition" className="font-[Montserrat] font-light text-white/80 hover:text-white">Édition 2024</Link>
-              <Link href="/partners" className="font-[Montserrat] font-light text-white/80 hover:text-white">Partners</Link>
               <Link href="/contact" className="font-[Montserrat] font-light text-white/80 hover:text-white">Contact</Link>
             </div>
           </nav>

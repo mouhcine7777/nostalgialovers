@@ -11,7 +11,7 @@ export default function TicketsSection() {
   });
 
   useEffect(() => {
-    const endDate = new Date('2025-03-01T23:59:59').getTime();
+    const endDate = new Date('2025-03-23T23:59:59').getTime();
 
     const updateTimer = () => {
       const now = new Date().getTime();
@@ -114,7 +114,7 @@ export default function TicketsSection() {
                   </div>
 
                   <motion.a
-                    href="https://guichet.com"
+                    href="https://www.guichet.com/nostalgia-lovers-festival"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full relative group"
