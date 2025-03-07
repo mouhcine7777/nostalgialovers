@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 const artistData = {
   '3 Juillet': [
     { name: 'BONEY M XPERIENCE', image: '3juillet/boneyM.webp' },
-    { name: 'THOMAS ANDRES', image: '3juillet/thomasAnders.webp' },
+    { name: 'THOMAS ANDRES FROM MODERN TALKING', image: '3juillet/thomasAnders.webp' },
     { name: 'BILLY CRAWFORD', image: '3juillet/billy.webp' },
     { name: 'SHOLA AMA', image: '3juillet/sholaama.webp' },
     { name: 'LONDONBEAT', image: '3juillet/LONDONBEAT.webp' },
