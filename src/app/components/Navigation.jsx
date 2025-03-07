@@ -52,7 +52,7 @@ const Navigation = () => {
               >
                 <Link href="/">
                   <Image
-                    src="/logo.png"
+                    src="/Logo.webp"
                     alt="Nostalgia Lovers Festival Logo"
                     width={isScrolled ? 60 : 100}
                     height={isScrolled ? 60 : 100}

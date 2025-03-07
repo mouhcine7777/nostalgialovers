@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <Link href="/" aria-label="Return to homepage">
               <Image
-                src="/logo.png"
+                src="/Logo.webp"
                 alt="Nostalgia Lovers Festival Logo"
                 width={120}
                 height={120}
