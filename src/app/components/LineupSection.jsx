@@ -51,7 +51,7 @@ export default function LineupSection() {
   const [activeDay, setActiveDay] = useState('3 Juillet');
 
   return (
-    <section className="py-12 md:py-20 relative" style={{ backgroundColor: '#7F0646' }}>
+    <section className="py-12 md:py-20 relative" style={{ backgroundColor: '#611A4F' }}>
       <motion.h2 
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -170,18 +170,18 @@ export default function LineupSection() {
           <div className="flex justify-between items-center mt-8">
             <div className="custom-pagination flex-grow" role="navigation" aria-label="Slides" />
             
-            <div className="flex items-center gap-4 mr-4">
+            <div className="flex items-center gap-3">
               <button
-                className="custom-nav-prev transition-all duration-200 w-12 h-12 rounded-full bg-gradient-to-r from-[#D6059E] to-[#ff47c2] text-white flex items-center justify-center shadow-lg hover:shadow-2xl transform hover:scale-110 active:scale-95"
+                className="custom-nav-prev transition-all duration-200 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-r from-[#D6059E] to-[#ff47c2] text-white flex items-center justify-center shadow-lg hover:shadow-2xl transform hover:scale-110 active:scale-95"
                 aria-label="Previous slide"
               >
-                <ArrowLeft className="w-6 h-6" aria-hidden="true" />
+                <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" aria-hidden="true" />
               </button>
               <button 
-                className="custom-nav-next transition-all duration-200 w-12 h-12 rounded-full bg-gradient-to-l from-[#D6059E] to-[#ff47c2] text-white flex items-center justify-center shadow-lg hover:shadow-2xl transform hover:scale-110 active:scale-95"
+                className="custom-nav-next transition-all duration-200 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-l from-[#D6059E] to-[#ff47c2] text-white flex items-center justify-center shadow-lg hover:shadow-2xl transform hover:scale-110 active:scale-95"
                 aria-label="Next slide"
               >
-                <ArrowRight className="w-6 h-6" aria-hidden="true" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" aria-hidden="true" />
               </button>
             </div>
           </div>
@@ -196,11 +196,18 @@ export default function LineupSection() {
         }
 
         .custom-pagination .swiper-pagination-bullet {
-          width: 10px;
-          height: 10px;
+          width: 8px;
+          height: 8px;
           background: #FFFFFF;
           opacity: 0.5;
           transition: all 0.3s ease;
+        }
+
+        @media (min-width: 768px) {
+          .custom-pagination .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+          }
         }
 
         .custom-pagination .swiper-pagination-bullet-active {

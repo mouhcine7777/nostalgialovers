@@ -5,6 +5,7 @@ import MomentsSection from "./components/MomentsSection";
 import LocationSection from "./components/LocationSection";
 import NavigationSection from "./components/Navigation";
 import TicketsSection from "./components/TicketsSection";
+import SpotifyPlaylistSection from "./components/SpotifyPlaylistSection";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <LineupSection />
       <MomentsSection />
       <TicketsSection />
+      <SpotifyPlaylistSection />
       <LocationSection />
       <Footer />
     </main>

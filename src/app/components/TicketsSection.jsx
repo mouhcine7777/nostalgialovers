@@ -11,7 +11,7 @@ export default function TicketsSection() {
   });
 
   useEffect(() => {
-    const endDate = new Date('2025-03-23T23:59:59').getTime();
+    const endDate = new Date('2025-04-06T23:59:59').getTime();
 
     const updateTimer = () => {
       const now = new Date().getTime();
@@ -33,7 +33,7 @@ export default function TicketsSection() {
   }, []);
 
   return (
-    <section className="py-12 md:py-20 relative" style={{ backgroundColor: '#7F0646' }}>
+    <section className="py-12 md:py-20 relative" style={{ backgroundColor: '#611A4F' }}>
       
       {/* Decorative palm images */}
       <img src="/palmleft.png" alt="Palm Left" className="absolute bottom-0 left-0 w-40 md:w-64 opacity-75" />
@@ -114,7 +114,7 @@ export default function TicketsSection() {
                   </div>
 
                   <motion.a
-                    href="https://www.guichet.com/nostalgia-lovers-festival"
+                    href="https://www.guichet.com/nostalgia-lovers-festival/nostalgia-lovers-festival-2eme-edition-early-bird-pass-3-soirees"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full relative group"

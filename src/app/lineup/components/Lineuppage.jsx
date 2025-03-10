@@ -135,7 +135,7 @@ export default function LineupPage() {
     <main>
       <section 
         className="min-h-screen pt-36 py-12 relative overflow-hidden" 
-        style={{ backgroundColor: '#7F0646' }}
+        style={{ backgroundColor: '#611A4F' }}
       >
         <div className="container mx-auto px-4 relative z-10">
           <motion.h1 

@@ -113,7 +113,7 @@ export default function HeroSection() {
           transition={{ delay: 1, duration: 0.5 }}
           className="mt-4"
         >
-          <Link href="https://www.guichet.com/nostalgia-lovers-festival" target="_blank" rel="noopener noreferrer">
+          <Link href="https://www.guichet.com/nostalgia-lovers-festival/nostalgia-lovers-festival-2eme-edition-early-bird-pass-3-soirees" target="_blank" rel="noopener noreferrer">
             <Button className="px-8 py-4 bg-yellow-500 font-[Montserrat] text-black font-bold text-lg rounded-full shadow-lg hover:shadow-yellow-500/50 transition-all duration-300 transform hover:scale-105">
               GET TICKETS NOW
             </Button>

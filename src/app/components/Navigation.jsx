@@ -56,7 +56,7 @@ const Navigation = () => {
                     alt="Nostalgia Lovers Festival Logo"
                     width={isScrolled ? 60 : 100}
                     height={isScrolled ? 60 : 100}
-                    className="transition-all duration-300"
+                    className="transition-all duration-300 max-w-[80px] md:max-w-none"
                   />
                 </Link>
               </motion.div>
