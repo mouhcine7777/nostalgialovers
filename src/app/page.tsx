@@ -1,6 +1,6 @@
 "use client";
 import HeroSection from "./components/HeroSection";
-import LineupSection from "./components/LineupSection";
+import SectionLineup from "./components/SectionLineup";
 import MomentsSection from "./components/MomentsSection";
 import LocationSection from "./components/LocationSection";
 import NavigationSection from "./components/Navigation";
@@ -13,7 +13,7 @@ export default function Home() {
     <main>
       <NavigationSection />
       <HeroSection />
-      <LineupSection />
+      <SectionLineup />
       <MomentsSection />
       <TicketsSection />
       <SpotifyPlaylistSection />
