@@ -24,7 +24,7 @@ const Navigation = () => {
     { name: "ACCUEIL", href: "/" },
     { name: "LINEUP", href: "/lineup" },
     { name: "ÉDITION 2024", href: "/2024edition"},
-    //{ name: "PARTNERS", href: "/partners" },
+    { name: "PARTENAIRES  ", href: "/partners" },
     { name: "CONTACT", href: "/contact" },
   ];
 

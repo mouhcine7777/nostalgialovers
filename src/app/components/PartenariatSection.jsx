@@ -1,19 +1,10 @@
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import 'swiper/css';
 
-const partnerLogos = [
-    { src: '/logo.png', name: 'Partner 1', width: 200, height: 80 },
-    { src: '/LOGO-PE.png', name: 'Partner 2', width: 200, height: 80 },
-    { src: '/logo.png', name: 'Partner 3', width: 200, height: 80 },
-    { src: '/LOGO-PE.png', name: 'Partner 4', width: 200, height: 80 },
-    { src: '/logo.png', name: 'Partner 5', width: 200, height: 80 },
-    { src: '/LOGO-PE.png', name: 'Partner 6', width: 200, height: 80 },
-    { src: '/logo.png', name: 'Partner 7', width: 200, height: 80 },
-    { src: '/LOGO-PE.png', name: 'Partner 8', width: 200, height: 80 },
+const officialSponsors = [
+    { src: '/logos/bmci.png', name: 'BMCI', width: 200, height: 80, website: 'https://www.bmci.ma' },
+    { src: '/logos/soueast.png', name: 'Soueast', width: 100, height: 40, website: 'https://www.soueast-motor.com' },
 ];
 
 const PartenariatSection = () => {
@@ -36,7 +27,7 @@ const PartenariatSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-4xl md:text-5xl font-bold font-[Montserrat] bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent mb-6"
           >
-            NOS PARTENAIRES
+            SPONSORS OFFICIELS
           </motion.h2>
           
           <motion.p
@@ -45,8 +36,8 @@ const PartenariatSection = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-base md:text-lg font-[Montserrat] font-light leading-relaxed text-gray-600 mx-auto"
           >
-            Derrière chaque note, chaque moment magique du festival, se trouvent ces partenaires d'exception. 
-            Leur vision et leur engagement transforment Nostalgia Lovers en une expérience musicale sans égale.
+            Nos sponsors officiels qui nous accompagnent pour faire de Nostalgia Lovers 
+            une expérience musicale inoubliable.
           </motion.p>
         </div>
 
@@ -54,50 +45,30 @@ const PartenariatSection = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="w-full"
+          className="flex justify-center items-center gap-12 md:gap-20"
         >
-          <style jsx global>{`
-            .swiper-wrapper {
-              transition-timing-function: linear !important;
-            }
-          `}</style>
-
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={40}
-            slidesPerView={2}
-            speed={5000}
-            loop={true}
-            autoplay={{
-              delay: 0,
-              disableOnInteraction: false,
-            }}
-            breakpoints={{
-              640: { slidesPerView: 3 },
-              768: { slidesPerView: 4 },
-              1024: { slidesPerView: 6 },
-              1280: { slidesPerView: 7 },
-            }}
-            className="py-8"
-          >
-            {partnerLogos.map((logo, index) => (
-              <SwiperSlide key={index} className="flex items-center justify-center">
-                <motion.div
-                  whileHover={{ scale: 1.10, y: -5 }}
-                  transition={{ duration: 0.3 }}
-                  className="w-[200px] h-[80px]" // Container with fixed dimensions
-                >
-                  <img 
-                    src={logo.src} 
-                    alt={logo.name}
-                    width={logo.width}
-                    height={logo.height}
-                    className="max-h-24 w-full h-full object-contain"
-                  />
-                </motion.div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+          {officialSponsors.map((sponsor, index) => (
+            <motion.a
+              key={index}
+              href={sponsor.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.10, y: -5 }}
+              transition={{ duration: 0.3 }}
+              className={`cursor-pointer block ${sponsor.name === 'Soueast' ? 'max-w-[390px]' : ''}`}
+              title={`Visiter le site de ${sponsor.name}`}
+            >
+              <img 
+                src={sponsor.src} 
+                alt={sponsor.name}
+                width={sponsor.width}
+                height={sponsor.height}
+                className={`object-contain transition-opacity duration-300 hover:opacity-80 ${
+                  sponsor.name === 'Soueast' ? 'max-h-12 w-auto' : 'max-h-24 w-auto'
+                }`}
+              />
+            </motion.a>
+          ))}
         </motion.div>
       </div>
     </section>

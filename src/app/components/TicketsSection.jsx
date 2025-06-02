@@ -38,9 +38,9 @@ export default function TicketsSection() {
     { 
       id: 'full', 
       name: 'Festival Pass', 
-      description: 'Accès à tous les concerts + Tombola Moto', 
-      price: '1590DH',
-      link: 'https://guichet.com/ma-fr/event/festivals/nostalgia-lovers-festival-2eme-edition-pass-3-soirees-tombola-moto-4581'
+      description: 'Accès à tous les concerts + Tombola Ibiza', 
+      price: '1690DH',
+      link: 'https://guichet.com/ma-fr/event/festivals/nostalgia-lovers-festival-2eme-edition-pass-3-soirees-tombola-ibiza'
     },
     { 
       id: 'day1', 

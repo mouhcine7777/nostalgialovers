@@ -129,7 +129,7 @@ export default function HeroSection() {
         className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-purple-800 via-purple-600 to-purple-800 py-3 z-20"
       >
         <Link 
-          href="https://guichet.com/ma-fr/event/festivals/nostalgia-lovers-festival-2eme-edition-pass-3-soirees-tombola-moto-4581"
+          href="https://guichet.com/ma-fr/event/festivals/nostalgia-lovers-festival-2eme-edition-pass-3-soirees-tombola-ibiza"
           target="_blank" 
           rel="noopener noreferrer"
           className="block"
@@ -138,37 +138,37 @@ export default function HeroSection() {
             <div className="track">
               <div className="banner-content">
                 <span className="text-white font-bold font-[Montserrat] text-xl md:text-xl sm:text-base xs:text-sm">
-                  ✦ Tentez de gagner une moto Phoenix Route 66 ! 
+                ✦ Tentez de gagner un voyage à Ibiza pour 2 personnes ! 
                 </span>
                 <span className="text-yellow-300 font-extrabold font-[Montserrat] text-xl md:text-xl sm:text-base xs:text-sm bg-purple-900 px-3 py-1 rounded-lg ml-2 mr-4">
-                  Offre valable jusqu'au 31 mai 2025
+                  Offre valable jusqu'au 02 juillet 2025
                 </span>
               </div>
               <div className="spacer"></div>
               <div className="banner-content">
                 <span className="text-white font-bold font-[Montserrat] text-xl">
-                  ✦ Tentez de gagner une moto Phoenix Route 66 ! 
+                ✦ Tentez de gagner un voyage à Ibiza pour 2 personnes ! 
                 </span>
                 <span className="text-yellow-300 font-extrabold font-[Montserrat] text-xl bg-purple-900 px-3 py-1 rounded-lg ml-2 mr-4">
-                  Offre valable jusqu'au 31 mai 2025
+                  Offre valable jusqu'au 02 juillet 2025
                 </span>
               </div>
               <div className="spacer"></div>
               <div className="banner-content">
                 <span className="text-white font-bold font-[Montserrat] text-xl">
-                  ✦ Tentez de gagner une moto Phoenix Route 66 ! 
+                ✦ Tentez de gagner un voyage à Ibiza pour 2 personnes ! 
                 </span>
                 <span className="text-yellow-300 font-extrabold font-[Montserrat] text-xl bg-purple-900 px-3 py-1 rounded-lg ml-2 mr-4">
-                  Offre valable jusqu'au 31 mai 2025
+                  Offre valable jusqu'au 02 juillet 2025
                 </span>
               </div>
               <div className="spacer"></div>
               <div className="banner-content">
                 <span className="text-white font-bold font-[Montserrat] text-xl">
-                  ✦ Tentez de gagner une moto Phoenix Route 66 ! 
+                ✦ Tentez de gagner un voyage à Ibiza pour 2 personnes ! 
                 </span>
                 <span className="text-yellow-300 font-extrabold font-[Montserrat] text-xl bg-purple-900 px-3 py-1 rounded-lg ml-2 mr-4">
-                  Offre valable jusqu'au 31 mai 2025
+                  Offre valable jusqu'au 02 juillet 2025
                 </span>
               </div>
             </div>
