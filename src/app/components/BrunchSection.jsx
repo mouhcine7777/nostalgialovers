@@ -52,28 +52,55 @@ const BrunchSection = () => {
           </div>
           
           <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 rounded-xl shadow-lg space-y-4 border border-white/20">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div className="flex flex-col gap-4">
               <div>
                 <p className="text-xs sm:text-sm text-gray-300">Date et lieu</p>
                 <p className="text-sm sm:text-base font-medium text-white">Dimanche 6 juillet • Vélodrome de Casablanca</p>
               </div>
-              <div>
-                <p className="text-xs sm:text-sm text-gray-300">Tarif</p>
-                <p className="text-sm sm:text-base font-medium text-white">900 Dhs (incluant 300 Dhs de crédit food & drinks)</p>
+              
+              {/* Full Experience Option */}
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <h4 className="text-sm sm:text-base font-semibold text-yellow-300">Pack Full Experience</h4>
+                  <span className="text-sm sm:text-base font-medium text-white">900 Dhs</span>
+                </div>
+                <p className="text-xs sm:text-sm text-gray-300">
+                  Accès au concert live et 300 DH de crédit food & drinks inclus, à consommer sur place au sein du food court (cocktails, tapas, plats, boissons…).
+                </p>
+                <motion.a 
+                  href="https://guichet.com/ma-fr/event/festivals/nostalgia-brunch-full-experience-4646"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.02, boxShadow: "0 8px 20px rgba(255, 224, 130, 0.3)" }}
+                  whileTap={{ scale: 0.98 }}
+                  className="block w-full px-4 sm:px-6 py-2 sm:py-3 rounded-full text-[#611A4F] text-sm sm:text-base font-bold bg-yellow-300 hover:bg-yellow-200 transition-all duration-300 shadow-lg text-center"
+                >
+                  Réserver Full Experience
+                  <span className="ml-2">→</span>
+                </motion.a>
               </div>
-            </div>
-            <div className="flex justify-center sm:justify-start pt-2">
-              <motion.a 
-                href="https://guichet.com/ma-fr/event/festivals/nostalgia-brunch-4646"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05, boxShadow: "0 8px 20px rgba(255, 224, 130, 0.3)" }}
-                whileTap={{ scale: 0.95 }}
-                className="px-6 sm:px-8 py-3 sm:py-4 rounded-full text-[#611A4F] text-sm sm:text-base md:text-lg font-bold bg-yellow-300 hover:bg-yellow-200 transition-all duration-300 shadow-lg"
-              >
-                Réserver Mes Billets
-                <span className="ml-2">→</span>
-              </motion.a>
+              
+              {/* Concert Only Option */}
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <h4 className="text-sm sm:text-base font-semibold text-yellow-300">Pack Concert Only</h4>
+                  <span className="text-sm sm:text-base font-medium text-white">690 Dhs</span>
+                </div>
+                <p className="text-xs sm:text-sm text-gray-300">
+                  Accès au concert live. Possibilité d'acheter food & drinks directement sur place, au sein du food court (paiement sur consommation).
+                </p>
+                <motion.a 
+                  href="https://guichet.com/ma-fr/event/festivals/nostalgia-brunch-concert-only-4782"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.02, boxShadow: "0 8px 20px rgba(255, 255, 255, 0.2)" }}
+                  whileTap={{ scale: 0.98 }}
+                  className="block w-full px-4 sm:px-6 py-2 sm:py-3 rounded-full text-white text-sm sm:text-base font-bold bg-white/20 hover:bg-white/30 border border-white/30 hover:border-white/50 transition-all duration-300 shadow-lg text-center backdrop-blur-sm"
+                >
+                  Réserver Concert Only
+                  <span className="ml-2">→</span>
+                </motion.a>
+              </div>
             </div>
           </div>
         </motion.div>

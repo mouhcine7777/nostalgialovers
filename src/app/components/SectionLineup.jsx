@@ -19,7 +19,7 @@ const artistData = {
     { name: 'WHIGFIELD', image: '3juillet/whigfield.webp' },
     { name: '3T', image: '3juillet/3Tband.webp' },
     { name: 'JENY PRESTON', image: '3juillet/jenypreston.webp' },
-    //{ name: 'SANDRA', image: '3juillet/sandra.webp' },
+    { name: 'DJ JOUDAR', image: '3juillet/djjoudar1.webp' }
   ],
   '4 Juillet': [
     { name: 'JENNY FROM ACE OF BASE', image: '4juillet/aceofbase.webp' },
@@ -32,8 +32,10 @@ const artistData = {
     { name: 'BELLINI', image: '4juillet/bellini.webp' },
     { name: 'LA CASSETTE DJ’S', image: '4juillet/lacassette.webp' },
     { name: 'TANIA EVANS ORIGINAL VOICE OF MR VAIN', image: '4juillet/taniaevans.webp' },
+    { name: 'DJ JOUDAR', image: '4juillet/djjoudar2.webp' }
   ],
   '5 Juillet': [
+    { name: 'ATC', image: '5juillet/atc.webp' },
     { name: 'TINA THE ROCK SHOW EXPERIENCE', image: '5juillet/tina.webp' },
     { name: 'MONTELL JORDAN', image: '5juillet/montell.webp' },
     { name: 'LA MOVIDA IBIZA', image: '5juillet/movida.webp' },
@@ -41,6 +43,7 @@ const artistData = {
     { name: 'MAD STUNTMAN AKA REEL 2 REAL', image: '5juillet/reel2reel.webp' },
     { name: 'C + C MUSIC FACTORY', image: '5juillet/ccmusicfactory.webp' },
     { name: 'GIBSON BROTHERS', image: '5juillet/gibsonbrothers.webp' },
+    { name: 'DJ JOUDAR', image: '5juillet/djjoudar3.webp' }
   ],
 };
 
